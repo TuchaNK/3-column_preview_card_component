@@ -54,6 +54,7 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	height: 510px;
+	border-radius: 15px;
 }
 
 .card:nth-child(1) {
