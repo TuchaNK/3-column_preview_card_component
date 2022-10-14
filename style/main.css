@@ -54,11 +54,11 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	height: 510px;
-	border-radius: 15px;
 }
 
 .card:nth-child(1) {
 	background-color: var(--bright-orange);
+	border-radius: 15px 0 0 15px;
 }
 
 .card:nth-child(2) {
@@ -67,6 +67,7 @@ body {
 
 .card:nth-child(3) {
 	background-color: var(--very-dark-cyan);
+	border-radius: 0 15px 15px 0;
 }
 
 h2 {
@@ -86,33 +87,40 @@ p {
 .btn {
 	display: inline-block;
 	margin-top: 90px;
-	color: var(--very-light-gray);
 	border-radius: 30px;
-	border: 2px solid var(--very-light-gray);
 	width: 135px;
-	transition: all 0.6s ease; 
+	transition: 0.8s; 
 	text-align: center;
 	line-height: 40px;
-}
-
-.card_btn-1:hover,.card_btn-2:hover,.card_btn-3:hover {
 	background-color: var(--very-light-gray);
 }
 
-.card_btn-1:hover	{
-	color: var(--bright-orange);
+
+.btn:hover {
+	border: 2px solid var(--very-light-gray);
+	color: var(--very-light-gray);
+	background-color: initial;
 }
 
-.card_btn-2:hover	{
+
+.card_btn-1	{
+	color: var(--bright-orange);
+
+}
+
+.card_btn-2	{
 	color: var(--dark-cyan);
 }
 
-.card_btn-3:hover	{
+.card_btn-3	{
 	color: var(--very-dark-cyan);
 }
 
+
+
 .attribution { 
-	font-size: 1.2rem; text-align: center; 
+	font-size: 1.2rem; 
+	text-align: center; 
 }
 
 .attribution a { 
@@ -194,6 +202,14 @@ p {
 	.card {
 		padding: 60px 90px 60px 60px;
 		height:510px;
+	}
+
+	.card:nth-child(1) {
+		border-radius: 0;
+	}
+
+	.card:nth-child(3) {
+		border-radius: 0;
 	}
 
 	h2 {
